@@ -68,6 +68,36 @@ a {
     padding-right: 30px;
 }
 
+.navItem:hover,
+.navItem:focus {
+    color: orange;
+    transition: 0.3s;
+}
+
+/* sidebar */
+.sideBar {
+font-size: 1.5rem;
+position: absolute;
+padding-top: 150px;
+right: 0;
+padding-right: 30px;
+}
+
+.sideBarProject {
+    padding-top: 300px;
+}
+.far,
+.fab {
+    color: black;
+    padding-bottom: 30px;
+}
+
+.far:hover,
+.fab:hover, 
+.fas:hover {
+    color: grey;
+}
+/* intro */
 .intro {
     display: flex;
     justify-content: space-between;
@@ -211,16 +241,25 @@ img {
 }
 
 .skillsFlex li {
-    width: 18%;
+    width: 15%;
     margin-bottom: 20px;
 }
 
 .skillsFlex li i {
-    font-size: 0.9rem;
-}
-.skillsFlex li i:hover {
     font-size: 1rem;
-    transition: 0.2s;
+}
+
+.upcoming {
+    margin: 40px 0 20px 0;
+}
+.upcomingSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upcomingSkills li {
+    width: 10%;
+    font-size: 0.8rem;
 }
 
 .reachOut p {
@@ -309,6 +348,7 @@ button:hover {
     background-color: grey;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 /* projects */
