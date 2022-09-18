@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haeun Song | Web Developer | Portfolio </title>
+    <meta name="description" content="The portfolio of Haeun Song, Web Developer">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/d7e854893f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Images/favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="headerFlex wrapper">
+            <a href="" class="logo">haeun song.</a>
+            <nav>
+                <ul class="navBar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper intro">
+            <div class="introImage">
+                <img src="./images/main_image.jpg" alt="a photo of a palm tree">
+            </div>
+            <div class="introText">
+                <h1>Hi. I'm Haeun. 
+                    <span>A Web Developer.</span>
+                </h1>
+            </div>
+        </div>
+        <div class="aboutMe" id="about">
+            <div class="wrapper">
+                <h2>About Me</h2>
+                <div class="aboutMeFlex">
+                    <div class="aboutMeImg">
+                        <img src="images/profile_photo.jpeg" alt="">
+                    </div>
+                    <div class="aboutMeText">
+                        <p>Hello! I'm Haeun, a front-end software developer who creates functional and responsive digital products using
+                            HTML5, CSS3, JavaScript, React, and API integrations. </p>
+                        <br>
+                        <p>I am currently studying at <a href="https://junocollege.com/" class="juno">Juno College of Technology</a>, in process of completing the Web Development Bootcamp.</p>
+                        <br>
+                        <p>Outside of bootcamp, I am an anatomist at <a href="https://surgery.utoronto.ca/division-anatomy" class="uoft">University of Toronto</a>, and a pediatric registered nurse -- providing care,
+                            education and support for students, patients and family. </p>
+                        <br>
+                        <p>Although very goal driven, I am a big advocate for work-life balance, and if I'm not working, I am probably
+                            sitting under a palm tree sipping some piña colada ~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper work" id="work">
+            <h2>Recent Work</h2>
+            <!-- carousel???? shutter/e-commerce/diceroller/to-do-app/podcast/queenstreetthingy -->
+            <div class="carousel">
+                <button class="arrow" id="arrowBefore">‹</button>
+                <button class="arrow" id="arrowAfter">›</button>
+                <ul class="carouselContainer" id="carouselContainer">
+                    <li class="slide"><a href=""><img src="images/diceroller.png" alt=""></a></li>
+                    <li class="slide"><a href=""><img src="images/todoapp.png" alt=""></a></li>
+                    <li class="slide"><a href=""><img src="images/queenstreet.png" alt=""></a></li>
+                    <li class="slide"><a href=""><img src="images/e-commerce.png" alt=""></a></li>
+                    <li class="slide"><a href=""><img src="images/barone.png" alt=""></a></li>
+                    <li class="slide"><a href=""><img src="images/shutter.png" alt=""></a></li>
+                </ul>
+            </div>
+            <a href="projects.html" class="viewMore">view more</a>
+        </div>
+        <div class="skills">
+            <div class="wrapper">
+            <h2>Skills</h2>
+            <ul class="skillsFlex">
+                <li>
+                    <p>HTML5</p>
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>CSS3</p>
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>SASS</p>
+                    <i class="fab fa-sass" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>JavaScript</p>
+                    <i class="fab fa-js" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>React</p>
+                    <i class="fab fa-react" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>API</p>
+                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>Firebase</p>
+                    <i class="devicon-firebase-plain"></i>
+                </li>
+                <li>
+                    <p>JQuery</p>
+                    <i class="devicon-jquery-plain"></i>
+                </li>
+                <li>
+                    <p>GitHub</p>
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <p>Responsive Design</p>
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                </li>
+        
+            </ul>
+            </div>
+        </div>
+        <div class="wrapper reachOut">
+            <h2>Let's work together!</h2>
+            <p>Have an exciting project where you need some help?</p>
+            <a href="contact.html" class="getInTouch">*Get in touch!*</a>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footerFlex">
+                <a href="">haeun song.</a>
+                <nav class="footerNav">
+                    <ul class="navBar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="projects.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- <ul class="socialMedia">
+                    <li><a href="http://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="http://github.com"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-file"></i></a></li>  resume -->
+                    <!-- <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li> email -->
+                <!-- </ul> -->
+            </div> 
+            <p class="copyright">© 2022 Haeun Song</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
