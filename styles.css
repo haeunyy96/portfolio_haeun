@@ -241,7 +241,7 @@ img {
 }
 
 .skillsFlex li {
-    width: 15%;
+    width: 18%;
     margin-bottom: 20px;
 }
 
@@ -249,18 +249,6 @@ img {
     font-size: 1rem;
 }
 
-.upcoming {
-    margin: 40px 0 20px 0;
-}
-.upcomingSkills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.upcomingSkills li {
-    width: 10%;
-    font-size: 0.8rem;
-}
 
 .reachOut p {
     margin-bottom: 15px;
