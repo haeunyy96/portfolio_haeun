@@ -54,7 +54,9 @@ a {
     font-weight: bold;
 }
 
-.navBar {
+/* nav */
+.navBar,
+.footernavBar {
     display: flex;
     font-family: 'open sans';
     text-transform: uppercase;
@@ -64,7 +66,8 @@ a {
     
 }
 
-.navBar li {
+.navBar li,
+.footernavBar li {
     padding-right: 30px;
 }
 
@@ -74,6 +77,21 @@ a {
     transition: 0.3s;
 }
 
+.menuIcon,
+.slideOutNav {
+    display: none;
+}
+
+.menuIcon,
+#menuClose,
+.menuIcon:hover {
+    background-color: transparent;
+}
+
+.menuIcon {
+    margin: 0;
+    padding: 0;
+}
 /* sidebar */
 .sideBar {
 font-size: 1.5rem;
@@ -347,6 +365,15 @@ button:hover {
 .reno p {
     margin-bottom: 5px;
 }
+
+.renoMail {
+    text-decoration: underline;
+}
+.renoMail:hover,
+.renoMail:focus {
+    color: grey;
+    transition: 0.3s;
+}
 .projectsFlex {
     display: flex;
     flex-wrap: wrap;
@@ -369,4 +396,106 @@ button:hover {
 
 .projectLi img {
     width: 100%;
+}
+
+/* media query */
+@media (max-width:750px) {
+    .sideBar {
+        position: static;
+        padding: 0;
+    }
+
+    .sideBar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around
+    }
+    .navBar {
+        display: none;
+    }
+
+    .menuIcon {
+        display: inline-block;
+    }
+    .slideOutNav {
+        background-color: #F9F9F9;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        padding: 30px 50px;
+        width: 100%;
+        max-width: 500px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        z-index: 20;
+        right: -650px;
+        transition: 0.5s;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    .slideOutNav button {
+        align-self: flex-end;
+    }
+
+    .slideOutNav a {
+        line-height: 2.2rem;
+    }
+
+    .slideOutNav a:hover {
+        color: grey;
+    }
+    .intro {
+        flex-direction: column;
+    }
+    .introImage,
+    .introText {
+        width: 100%;
+    }
+    .introText {
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+
+    .aboutMeFlex {
+        flex-direction: column;
+    }
+    .aboutMeImg,
+    .aboutMeText {
+        width: 100%;
+    }
+
+    .skillsFlex {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .skillsFlex li {
+        width: 90%;
+    }
+
+    .footerFlex {
+        flex-direction: row;
+    }
+    .footernavBar {
+        flex-direction: row;
+    }
+
+    .aboutMe,
+    .work,
+    .skills,
+    .reachOut {
+        padding: 60px 0;
+}
+
+    .projectsFlex {
+        flex-direction: row;
+    }
+    .projectLi {
+        width: 100%;
+    }
 }
