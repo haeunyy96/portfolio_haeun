@@ -114,6 +114,7 @@ padding-right: 30px;
 .fab:hover, 
 .fas:hover {
     color: grey;
+    transition: 0.3s;
 }
 /* intro */
 .intro {
@@ -285,20 +286,13 @@ footer {
 .footerFlex {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 70px;
-}
-
-.socialMedia {
-    display: flex;
-}
-
-.socialMedia li {
-    padding-right: 20px;
+    padding-bottom: 40px;
 }
 
 .copyright {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 300;
+    text-align: left;
 }
 
 
@@ -429,10 +423,9 @@ button:hover {
         display: flex;
         flex-direction: column;
         z-index: 20;
-        right: -650px;
+        right: -600px;
         transition: 0.5s;
     }
-
     .open {
         right: 0;
     }
@@ -446,7 +439,14 @@ button:hover {
     }
 
     .slideOutNav a:hover {
-        color: grey;
+        color: orange;
+        transition: 0.3s;
+    }
+    .mainMenu {
+        font-family: 'open sans';
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
     .intro {
         flex-direction: column;
