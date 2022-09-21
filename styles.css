@@ -294,7 +294,9 @@ footer {
     font-weight: 300;
     text-align: left;
 }
-
+.footerTop {
+    display: none;
+}
 
 
 /* contact page */
@@ -481,16 +483,22 @@ button:hover {
     .footerFlex {
         flex-direction: row;
     }
-    .footernavBar {
-        flex-direction: row;
+    .footerNav {
+        display: none;
     }
-
+    .footerTop {
+        display: inline-block;
+    }
+    .footerTop a:hover {
+        color: grey;
+        transition: 0.3s;
+    }
     .aboutMe,
     .work,
     .skills,
     .reachOut {
         padding: 60px 0;
-}
+    }
 
     .projectsFlex {
         flex-direction: row;
